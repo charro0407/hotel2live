@@ -61,7 +61,7 @@ You need to have a perfect environment for laravel, you can use a hosting or bet
 Clone the repository
 
 ```sh
-$ git clone ...
+$ git clone https://github.com/charro0407/hotel2live.git
 ```
 
 Install dependencies
