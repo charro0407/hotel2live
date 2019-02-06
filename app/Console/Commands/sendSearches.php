@@ -4,6 +4,8 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Mail;
+use DB;
+use App\Quotation;
 
 class sendSearches extends Command
 {
@@ -38,7 +40,14 @@ class sendSearches extends Command
      */
     public function handle()
     {
-        Mail::raw("Hello World", function ($mail) {
+        // Get data from database
+        $data = DB::table('searches')->orderBy('created_at', 'asc')->take(10)->get();
+        $data = json_decode(json_encode($data), true);
+
+        $location = DB::table('locations')->get()->toArray();
+        $location = json_decode(json_encode($location), true);
+
+        Mail::send("layouts.emailSearches", ['data' => $data, 'location' => $location], function ($mail) {
                 $mail->from(env('MAIL_FROM'));
                 $mail->to(env('MAIL_ADMIN_NOTIFICATION'))
                     ->subject('Report of recent searches in hotel2live');

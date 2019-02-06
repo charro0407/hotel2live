@@ -14,6 +14,7 @@ Route::get('/', function()
 	$location = json_decode(json_encode($location), true);
 
 	$data = array();
+	$dates = get_dates();
 
 	// If have a search, show the hotels
 	if (Input::has('search') or Input::has('dates') or Input::has('location')) {
@@ -25,7 +26,7 @@ Route::get('/', function()
 		DB::table('searches')->insert(
 	    	[
 	    		'keyword' => $_search,
-	    		'date_range' => $_dates,
+	    		'date_range' => $dates['from'].' > '.$dates['to'],
 	    		'location' => $_location
 		    ]);
 
@@ -49,10 +50,9 @@ Route::get('/', function()
 			$data[$key]['hotel']['min_price'] = min(array_column($data[$key]['rooms'], 'price'));
 			
 		}
-	} else {
-		// If no search, only pre-fill the dates with today-tomorrow dates
-		$dates = get_dates();
 	}
+
+	
 
 
 	return view('pages.home', [
