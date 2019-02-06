@@ -153,6 +153,7 @@ Payment Process and Customer Information
 ![enter image description here](https://lh3.googleusercontent.com/-a7LaJEvvpSeIuoGlRjzKyRef9oB1zApTVcJyji6eAedrS3nAgXNglHSj66VqeX3yxoiX_kG1LmZRg)
 
 Thank You Page
+
 ![enter image description here](https://lh3.googleusercontent.com/NgNmeorSuy1OZrUQE9LbaPYlS0N6ExHjp25VmCvZz7nPafCM36pnFO8kkMwy_5FV52ImZgeU1T1vvQ)
 
 # Conclusion
