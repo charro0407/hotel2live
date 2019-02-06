@@ -1,4 +1,5 @@
 
+
 # Hotel 2 Live. Project for work2live.com
 
 This is a technical test for a job at work2live.com. I used Laravel 5.7.24 installed in Homestead Virtual Machine on Mac OSX for the best laravel environment.
@@ -70,6 +71,12 @@ $ cd hotel2live
 $ npm install
 ```
 
+You can too re-build the sass and javascript, with this command:
+
+```sh
+$ npm run dev
+```
+
 Configure .env exactly like this example
 
 ```
@@ -116,26 +123,33 @@ If everything is good, you have to run the site in the domain that you defined i
 # Screenshot Comparison
 
 Example 1
+
 ![Example 1](https://lh3.googleusercontent.com/MKuEcsw5rC030sgnFCqPQyZEfC6rPGIjcLW1GGYwJwDV0bsUZjZqhzSYlKR28S-tIaZOTEup-KI2kA "Example 1")
 
 Example 2
+
 ![enter image description here](https://lh3.googleusercontent.com/2Pyn6VKPTSIZwfJYSxXgyhKErR8OHYHGzrzZLTboO74h7Fd9nNX4-qL2RAJAynUt-zOGT32xHIkukQ)
 
 Example 3
+
 ![enter image description here](https://lh3.googleusercontent.com/0_9Qye_lkH5Wj2LOKj8HBTAkZ_N5AWusPompJv-SUqiMiFtsfzA70jHEVjSly3GUT6R1OeBuZEBHDw)
 
 Hotel 2 Live
 
 Example 1
+
 ![enter image description here](https://lh3.googleusercontent.com/uYH_NN3JYaTEmtR7B_RnYit1uSlR19b0IfMB9dEHqNn8oFlhTJ0bsp8tYwhmOZkJrxfYAxI7lJlhDg)
 
 Example 2
+
 ![enter image description here](https://lh3.googleusercontent.com/Z0Z0zYKy1CLsdpSB41EAim00cl8hO1G5yPEsA1VzLZfSvtQnx7zdYtJ1Bg_7wg9vkpYUdo95EPZMGg)
 
 Example 3
+
 ![enter image description here](https://lh3.googleusercontent.com/s1BTBkCCUk5-xJn8fChr9M5bk0uQv6PqIYXmSaTLUl2woE9TyXQtczP8Api9kNe-tTLVcVEzigXmOQ)
 
 Payment Process and Customer Information
+
 ![enter image description here](https://lh3.googleusercontent.com/-a7LaJEvvpSeIuoGlRjzKyRef9oB1zApTVcJyji6eAedrS3nAgXNglHSj66VqeX3yxoiX_kG1LmZRg)
 
 Thank You Page
@@ -150,6 +164,9 @@ I live in Miami and I have full time availability.
 Author:
 
 **Javier Rocha Glenn**
+
 [+1 (786) 728-7695](tel:+17867287695)
+
 charro0407@gmail.com
+
 Miami, FL
